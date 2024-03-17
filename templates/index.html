@@ -6,6 +6,33 @@
   <title>Document</title>
 </head>
 <body>
+{% comment %} <h3>lista desordenada{{posts|length}}</h3> {% endcomment %}
+{% comment %} <ul>
+{% for post in posts %}
+<li> {{post.titulo}}</li>
+{% endfor %}
+</ul>
+<ul>
+{% for post in filtro %}
+<li> {{post.titulo}}</li>
+{% endfor %}
+</ul>
+<h3>consultar un unico registro</h3>
+{{ post.fecha }} - {{ post.titulo }} {% endcomment %}
+
+{% comment %} <h3>limite de la consulta {{limite|length}}</h3>
+<ul>
+{% for post in limite %}
+<li> {{post.id}}</li>
+{% endfor %}
+</ul> {% endcomment %}
+{% comment %} 
+<h3>order_by {{order|length}}</h3>
+<ul>
+{% for post in order %}
+<li> {{post.cuerpo}}</li>
+{% endfor %}
+</ul> {% endcomment %}
 
 <h3>P{{repo.firs_name}}</h3>
 <ul>
